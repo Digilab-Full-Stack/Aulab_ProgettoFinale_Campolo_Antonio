@@ -22,7 +22,7 @@
               <li><a class="dropdown-item" href="{{route('register')}}">Registrati</a></li>
             </ul>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Area Riservata</a>
+                <a class="nav-link" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
               </li>
               <li class="nav-item">
               <a class="nav-link px-5" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti account</a>
