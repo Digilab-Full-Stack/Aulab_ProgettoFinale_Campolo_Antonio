@@ -79,7 +79,7 @@ class ArticleController extends Controller implements HasMiddleware
     }
     public function byUser(User $user) {
     
-        $articles = Article::all();
+        $articles=$user->articles()->orderBy('created_at', 'desc')->get();
         return view('article.by-user', compact('user','articles'));
     }
     

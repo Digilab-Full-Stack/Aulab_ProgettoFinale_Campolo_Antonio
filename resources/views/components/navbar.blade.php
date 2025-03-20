@@ -12,18 +12,16 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
+            </li>
           @auth
-          <li class="nav-item dropdown d-none">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Login
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{{route('login')}}">Accedi</a></li>
-              <li><a class="dropdown-item" href="{{route('register')}}">Registrati</a></li>
-            </ul>
               <li class="nav-item">
                 <a class="nav-link" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('article.byUser', ['user' => auth()->user()])}}">I miei articoli</a>
+                </li>
               <li class="nav-item">
               <a class="nav-link px-5" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti account</a>
              
@@ -45,9 +43,7 @@
               </li>
                 
 
-              <li class="nav-item">
-                <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
-                </li>
+             
               
            @endauth
          
