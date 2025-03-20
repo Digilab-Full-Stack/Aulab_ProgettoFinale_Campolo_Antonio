@@ -44,6 +44,10 @@
               <a class="nav-link disabled" aria-disabled="true">Area Riservata</a>
               </li>
                 
+
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
+                </li>
               
            @endauth
          
