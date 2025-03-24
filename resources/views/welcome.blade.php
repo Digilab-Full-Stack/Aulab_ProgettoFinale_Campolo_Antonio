@@ -7,6 +7,13 @@
 </div>
 @endif
 
+@if (session('alert'))
+<div class="alert alert-danger">
+    {{session('alert')}}
+
+</div>
+@endif
+
 <div class="container-fluid p5 bg-secondary-subtle text-center">
     <div class="row justify-content-center">
         <div class="col-12">

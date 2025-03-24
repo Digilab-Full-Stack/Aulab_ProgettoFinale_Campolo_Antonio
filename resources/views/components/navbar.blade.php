@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand px-5" href="{{route('homepage')}}">TAP</a>
@@ -15,18 +16,25 @@
           <li class="nav-item">
             <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
             </li>
-          @auth
-              <li class="nav-item">
-                <a class="nav-link" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{route('article.byUser', ['user' => auth()->user()])}}">I miei articoli</a>
+            {{-- @if(Auth::user()->is_admin) --}}
+            <li><a class="dropdown-item" href="{{route('admin.dashboard')}} ">DashBoard Amministratore</a></li>
+            <li><a class="dropdown-item" href="{{route('revisor.dashboard')}} ">DashBoard Revisore</a></li>
+            {{-- @endif --}}
+            @auth
+                <li class="nav-item">
+                <a class="nav-link active" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
                 </li>
-              <li class="nav-item">
-              <a class="nav-link px-5" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti account</a>
+                <li class="nav-item">
+                <a class="nav-link active" href="{{route('article.byUser', ['user' => auth()->user()])}}">I miei articoli</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{route('careers')}}">Lavora con noi</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link px-5" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti account</a>
              
                    <form id="form-logout" action="{{route('logout')}}" method="POST" class="d-none">@csrf</form>
-            </li>   
+                </li>   
               @else
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,9 +58,6 @@
           <form class="d-flex px-5 mx-5 display-content-center " role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
-           
-
-         
         </form>
       </div>
     </div>
