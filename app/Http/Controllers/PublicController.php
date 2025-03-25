@@ -40,10 +40,10 @@ class PublicController extends Controller implements HasMiddleware
             'message'=> 'required'
         ]);
         $user = Auth::user();
-        $role=$request->role;
-        $email=$request->email;
-        $message=$request->message;
-        $info=compact('role', 'email', 'message');
+        $role = $request->role;
+        $email = $request->email;
+        $message = $request->message;
+        $info = compact('role', 'email', 'message');
 
         Mail::to('admin@theaulabpost.it')->send(new CareerRequestMail($info));
 

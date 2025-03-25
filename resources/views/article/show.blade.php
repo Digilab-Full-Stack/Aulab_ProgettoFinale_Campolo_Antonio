@@ -25,7 +25,7 @@
             </div>
             <hr>
             <p>{{$article->body}} </p>
-            @if ( Auth::user() && Auth::user()->is-revisor)
+            @if ( Auth::user() && Auth::user()->is_revisor)
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">

@@ -37,7 +37,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" value="{{Auth::user()->email}}" disabled>
+                            <input type="email" class="form-control" id="email" name="email" value="{{Auth::user()->email}}" readonly>
                             @error('email')
                             <span class="text-danger">{{$message}} </span>
                             @enderror
@@ -46,7 +46,7 @@
                             <label for="message" class="form-label">Breve presentazione</label>
                             <textarea class="form-control" id="message" name="message" cols="30" rows="7">{{old('message')}}</textarea>
                             @error('message')
-                            <span class="text-danger">{{$mesasage}} </span>
+                            <span class="text-danger">{{$message}} </span>
                             @enderror
                         </div> 
                         <div class="mt-3 d-flex justify-content-center">
