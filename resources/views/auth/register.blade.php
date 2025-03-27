@@ -11,11 +11,17 @@
 @endif
 
 
-
+<div class="container">
+  <div class="row justify-content-center py-5 text-center">
+      <div class="col-12">
+          <h3>Inserisci i tuoi dati per registrarti</h3>
+      </div>
+  </div>
+</div>
 
 <div class="container">
-    <div class="row">
-        <div class="col-12">
+    <div class="row justify-content-center">
+        <div class="col-12 w-25 text-center">
 
             <form action="{{route('register')}}" method="POST">
                 @csrf

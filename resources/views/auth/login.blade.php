@@ -9,17 +9,24 @@
     </div>
 @endif
 <x-layout>
+    <div class="container">
+        <div class="row justify-content-center py-5 text-center">
+            <div class="col-12">
+                <h3>Inserisci i tuoi dati per accedere</h3>
+            </div>
+        </div>
+    </div>
 <div class="container">
-    <div class="row">
-        <div class="col-12">
+    <div class="row justify-content-center">
+        <div class="col-12 w-25 text-center">
 
             <form action="{{route('login')}}" method="POST">
                 @csrf
               
                 <div class="mb-3">
-                  <label for="inputEmail" class="form-label">Email address</label>
+                  <label for="inputEmail" class="form-label">Indirizzo email</label>
                   <input type="email" name="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" value="{{old('inputEmail')}}">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <div id="emailHelp" class="form-text">Inserisci l'e-mail inserita in fase di registrazione</div>
                 </div>
                 <div class="mb-3">
                   <label for="inputPassword" class="form-label">Password</label>

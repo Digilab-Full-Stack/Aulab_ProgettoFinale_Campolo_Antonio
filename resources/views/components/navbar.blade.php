@@ -1,39 +1,48 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand px-5" href="{{route('homepage')}}">TAP</a>
+        {{-- <a class="navbar-brand px-5" href="{{route('homepage')}}">TAP</a> --}}
+        <div>
+        <img src="/storage/images/logotap.png" href="{{route('homepage')}}" alt="il logo di The Aulab Post">
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+            <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
-          </li>
-          <li class="nav-item">
+            </li>
+            <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
+            </li>
+            <li class="nav-item">
             <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
             </li>
+       
  
+                
+                
+
+
             @auth
                 <li class="nav-item">
-                <a class="nav-link active" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
+                  <a class="nav-link active" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" href="{{route('article.byUser', ['user' => auth()->user()])}}">I miei articoli</a>
+                  <a class="nav-link active" href="{{route('article.byUser', ['user' => auth()->user()])}}">I miei articoli</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route('careers')}}">Lavora con noi</a>
+                  <a class="nav-link active" aria-current="page" href="{{route('careers')}}">Lavora con noi</a>
                 </li>
                 @if(Auth::user()->is_admin)
-                <li><a class="dropdown-item" href="{{route('admin.dashboard')}} ">DashBoard Amministratore</a></li>
-                <li><a class="dropdown-item" href="{{route('revisor.dashboard')}} ">DashBoard Revisore</a></li>
+                <li><a class="nav-link" href="{{route('admin.dashboard')}} ">DashBoard Amministratore</a></li>
+                @endif
+                @if(Auth::user()->is_revisor)
+                <li><a class="nav-link" href="{{route('revisor.dashboard')}} ">DashBoard Revisore</a></li>
                 @endif
                 <li class="nav-item">
-                <a class="nav-link px-5" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti account</a>
-             
+                 <a class="nav-link px-5" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti account</a>
                    <form id="form-logout" action="{{route('logout')}}" method="POST" class="d-none">@csrf</form>
                 </li>   
               @else
@@ -46,21 +55,14 @@
                   <li><a class="dropdown-item" href="{{route('register')}}">Registrati</a></li>
                 </ul>
               </li>
-                  
-              <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Area Riservata</a>
-              </li>
-                
-
-             
               
            @endauth
-         
-          <form class="d-flex px-5 mx-5 display-content-center " role="search" action="{{route('article.search')}}" method="GET">
-            <input class="form-control me-2" type="search" name="query" placeholder="Cerca fra gli articoli pubblicati" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Cerca</button>
-        </form>
-      </div>
+        </div>
+
+          <form class="px-5 mx-5 d-flex justify-content-end" role="search" action="{{route('article.search')}}" method="GET">
+            <input class="form-control me-2" type="search" name="query" placeholder="Cerca" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" title="Cerca fra gli articoli pubblicati...">Cerca</button>
+          </form>
     </div>
-  </div>
+    
   </nav>
