@@ -29,9 +29,9 @@
                 <li class="nav-item">
                   <a class="nav-link active" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                   <a class="nav-link active" href="{{route('article.byUser', ['user' => auth()->user()])}}">I miei articoli</a>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="{{route('careers')}}">Collabora</a>
                 </li>
