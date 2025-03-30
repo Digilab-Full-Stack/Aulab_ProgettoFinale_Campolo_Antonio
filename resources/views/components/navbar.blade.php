@@ -41,6 +41,9 @@
                 @if(Auth::user()->is_revisor)
                 <li><a class="nav-link" href="{{route('revisor.dashboard')}} ">DashBoard Revisore</a></li>
                 @endif
+                @if(Auth::user()->is_writer)
+                <li><a class="nav-link" href="{{route('writer.dashboard')}} ">DashBoard Redattore</a></li>
+                @endif
                 <li class="nav-item">
                  <a class="nav-link px-5" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti account</a>
                    <form id="form-logout" action="{{route('logout')}}" method="POST" class="d-none">@csrf</form>
