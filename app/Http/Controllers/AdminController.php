@@ -65,5 +65,11 @@ class AdminController extends Controller
         $category->delete();
         return redirect()->back()->with('message', 'Categoria eliminata correttamente' );
     }
-
+    public function storeCategory(Request $request) {
+      
+        Category::create([
+            'name' => strtolower($request->name),
+        ]);
+        return redirect()->back()->with('message', 'Categoria inserita correttamente' );
+    }
 }

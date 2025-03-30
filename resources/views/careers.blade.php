@@ -4,7 +4,7 @@
         <div class="row justify-content-center">
             <div class="col-12">
                 
-                <h1 class="display-1">Lavora con noi</h1>
+                <h1 class="display-5">Collabora</h1>
            
                 {{-- <h2> {{$article->category}} </h2> --}}
             </div>
@@ -59,6 +59,9 @@
                 </form>
             </div>
             <div class="col-12 col-md-6 p-5">
+                
+                <img src="/storage/images/teamwork.jpg" alt="" class="teamworkImage justify-content-center">
+            
                 <h2>Collabora come amministratore</h2>
                 <p>Avrai i superpoteri!</p>
                 <h2>Collabora come revisore</h2>

@@ -33,7 +33,7 @@
                   <a class="nav-link active" href="{{route('article.byUser', ['user' => auth()->user()])}}">I miei articoli</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{{route('careers')}}">Lavora con noi</a>
+                  <a class="nav-link active" aria-current="page" href="{{route('careers')}}">Collabora</a>
                 </li>
                 @if(Auth::user()->is_admin)
                 <li><a class="nav-link" href="{{route('admin.dashboard')}} ">DashBoard Amministratore</a></li>

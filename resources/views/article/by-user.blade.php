@@ -29,9 +29,14 @@
                         <div class="card-body">
                             <h5 class="card-title">{{$article->title}} </h5>
                             <p class="card-subtitle">{{$article->subtitle}} </p>
-                            <p class="small text-muted">Categoria:
-                            <a href="{{route('article.byCategory', $article->category)}}" class="text-capitalize text-muted"> {{$article->category->name}}</a>
+                            @if ($article->category)
+                            <p class="fs-5">
+                                Categoria:
+                                <a href="{{route('article.byCategory', $article->category)}}" class="text-capitalize fw-bold text-muted">{{$article->category->name}} </a>
                             </p>
+                            @else
+                            <p class="fs-5">Nessuna categoria</p>
+                            @endif
                       
                         
     

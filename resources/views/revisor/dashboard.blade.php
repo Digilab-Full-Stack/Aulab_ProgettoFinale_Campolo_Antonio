@@ -1,19 +1,19 @@
 <x-layout>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="display-1">
-    Bentornato, Revisore {{Auth::user()->name}}
-                </h1>
-            </div>
-        </div>
-    </div>
     @if (session('message'))
     <div class=" alert alert-success">
         {{session('message')}}
     </div>
     @endif
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-5 py-5 text-center">
+    Bentornato, Revisore {{Auth::user()->name}}
+                </h1>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-12">
