@@ -13,7 +13,7 @@
 
 </div>
 @endif
-<div class="container pt-2">
+<div class="container pt-5">
   <div class="row">
     <div class="col-12 fontCorsive text-center display-7">
       <h3 class="">"E noi, compresi e amabili o offesi e succubi di demoni e lupi,</h3>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/storage/images/home1.png" class="d-block w-100" alt="...">
+                    <img src="/storage/images/home1.png" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="fontCorsive fs-3" >Se non esistessero i camaleonti, riuscireste a immaginarli?</h5>
                       <p>Qui leggerai di camaleonti e altre storie... </p>
@@ -81,7 +81,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid pb-0">
+<div class="container-fluid">
   <div class="row">
     <div class="col-12 d-flex justify-content-center">
       <img class="w-50" src="/storage/images/barrasotto.png" alt="">

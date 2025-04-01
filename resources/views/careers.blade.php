@@ -5,8 +5,7 @@
             <div class="col-12">
                 
                 <h1 class="display-1 fontCorsive ">Collabora</h1>
-           
-                {{-- <h2> {{$article->category}} </h2> --}}
+          
             </div>
     
         </div>

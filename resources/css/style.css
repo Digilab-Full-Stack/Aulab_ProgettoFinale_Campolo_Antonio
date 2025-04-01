@@ -10,27 +10,54 @@
 
 .imageCustom {
     height: 350px;
-    width: 300px;
+   
 }
 
 .cardCustom {
     height: 600px;
-    width: 300px;
-   
+    width: 350px;
+    max-width: 100%;
 }
 
 
 .carouselCustom {
+    padding-top: 20px;
     height: 350px;
     width: 600px;
 }
 
 .layCustom {
-    height: 530px;
-    width: 100px;
+    height: 450px;
+    width: 70px;
 }
 
 .btnCustom {
     height: 50px;
     width: 50px;
+}
+.disconnect {
+    margin-left: 100px;
+}
+@media screen and (max-width:500px) {
+    .layCustom {
+        height: 280px;
+        width: 40px;
+    }
+    .carouselCustom {
+        padding-top: 10px;
+        height: 280px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .layCustom {
+        height: 280px;
+        width: 40px;
+    }
+    .carouselCustom {
+        padding-top: 10px;
+        height: 280px;
+        width: 400px;
+    }
 }

@@ -1,17 +1,33 @@
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-       
-        <div class="navbar-brand">
-        <img src="/storage/images/logotap.png" href="{{route('homepage')}}" alt="il logo di The Aulab Post">
-        </div>
+
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col-10">
+                <div class="navbar-brand d-flex justify-content-center">
+                  <img src="/storage/images/logotap.png" href="{{route('homepage')}}" alt="il logo di The Aulab Post">
+                </div>
+      </div>            
+    <div class="col-2 d-flex align-items-center ">
+          <form class="d-flex justify-content-center" role="search" action="{{route('article.search')}}" method="GET">
+            <input class="form-control me-auto" type="search" name="query" placeholder="Cerca" aria-label="Search">
+            <button class="btn btn-outline-success " type="submit" title="Cerca fra gli articoli pubblicati...">Cerca</button>
+          </form>
+        
+    </div>
+  </div>
+</div>
+    
+  <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
+  
+  <div class="container-fluid">
+     
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
+            <a class="nav-link" aria-current="page" href="{{route('homepage')}}">Home</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -27,27 +43,24 @@
 
             @auth
                 <li class="nav-item">
-                  <a class="nav-link active" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
+                  <a class="nav-link" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
                 </li>
-                {{-- <li class="nav-item">
-                  <a class="nav-link active" href="{{route('article.byUser', ['user' => auth()->user()])}}">I miei articoli</a>
-                </li> --}}
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{{route('careers')}}">Collabora</a>
+                  <a class="nav-link" aria-current="page" href="{{route('careers')}}">Collabora</a>
                 </li>
                 @if(Auth::user()->is_admin)
-                <li><a class="nav-link ps-5" href="{{route('admin.dashboard')}} ">DashBoard Amministratore</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('admin.dashboard')}} ">DashBoard Amministratore</a></li>
                 @endif
                 @if(Auth::user()->is_revisor)
-                <li><a class="nav-link" href="{{route('revisor.dashboard')}} ">DashBoard Revisore</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('revisor.dashboard')}} ">DashBoard Revisore</a></li>
                 @endif
                 @if(Auth::user()->is_writer)
-                <li><a class="nav-link" href="{{route('writer.dashboard')}} ">DashBoard Redattore</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('writer.dashboard')}} ">DashBoard Redattore</a></li>
                 @endif
-                <li class="nav-item position-relative start-25">
-                  <button class="btn btn-outline-warning ">
-                 <a class="nav-link px-5" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti account</a>
-                </button>
+                <li class="nav-item disconnect">
+                  {{-- <button class="btn btn-outline-danger "> --}}
+                 <a class="nav-link text-danger fw-bold" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti</a>
+                {{-- </button> --}}
                    <form id="form-logout" action="{{route('logout')}}" method="POST" class="d-none">@csrf</form>
                 </li>   
               @else
@@ -63,13 +76,7 @@
               
            @endauth
         </div>
-<div>
-          <form class="px-5 mx-5 d-flex justify-content-end" role="search" action="{{route('article.search')}}" method="GET">
-            <input class="form-control me-2" type="search" name="query" placeholder="Cerca" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit" title="Cerca fra gli articoli pubblicati...">Cerca</button>
-          </form>
 
-          </div>
     </div>
     
   </nav>
