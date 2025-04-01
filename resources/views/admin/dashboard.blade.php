@@ -5,12 +5,21 @@
     </div>
     @endif
     
+    <div class="container-fluid p5 bg-secondary-subtle text-center">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                
+                <h1 class="display-1 fontCorsive ">Dashboard Amministratore</h1>
+          
+            </div>
     
+        </div>
+    </div>  
     <div class="container-fluid py-5 text-center">
     <div class="row">
         <div class="col-12">
             <h1 class="display-5">
-Bentornato, Amministratore {{Auth::user()->name}}
+Ciao, {{Auth::user()->name}} !
             </h1>
         </div>
     </div>

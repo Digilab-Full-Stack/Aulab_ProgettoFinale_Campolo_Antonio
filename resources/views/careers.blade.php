@@ -4,7 +4,7 @@
         <div class="row justify-content-center">
             <div class="col-12">
                 
-                <h1 class="display-5">Collabora</h1>
+                <h1 class="display-1 fontCorsive ">Collabora</h1>
            
                 {{-- <h2> {{$article->category}} </h2> --}}
             </div>

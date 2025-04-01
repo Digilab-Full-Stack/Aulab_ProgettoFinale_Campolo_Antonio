@@ -1,16 +1,16 @@
 <x-layout>
 
-<div class="container-fluid p-5 bg-secondary-subtle tect-center">
+<div class="container-fluid bg-secondary-subtle text-center">
     <div class="row justify-content-center">
         <div class="col-12">
-            <h1 class="dislay-1">Inserisci un articolo</h1>
+            <h1 class="display-1 fontCorsive text-center">Inserisci un articolo</h1>
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-8">
+<div class="container-fluid p-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 w-50">
             <form action="{{route('article.store')}}" method="POST" class="card p-5 shadow" enctype="multipart/form-data"> 
                 @csrf
                 <div class="mb-3">

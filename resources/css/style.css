@@ -7,3 +7,30 @@
     height: 250px;
     width: 350px;
 }
+
+.imageCustom {
+    height: 350px;
+    width: 300px;
+}
+
+.cardCustom {
+    height: 600px;
+    width: 300px;
+   
+}
+
+
+.carouselCustom {
+    height: 350px;
+    width: 600px;
+}
+
+.layCustom {
+    height: 530px;
+    width: 100px;
+}
+
+.btnCustom {
+    height: 50px;
+    width: 50px;
+}

@@ -1,8 +1,8 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        {{-- <a class="navbar-brand px-5" href="{{route('homepage')}}">TAP</a> --}}
-        <div>
+       
+        <div class="navbar-brand">
         <img src="/storage/images/logotap.png" href="{{route('homepage')}}" alt="il logo di The Aulab Post">
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
                   <a class="nav-link active" aria-current="page" href="{{route('careers')}}">Collabora</a>
                 </li>
                 @if(Auth::user()->is_admin)
-                <li><a class="nav-link" href="{{route('admin.dashboard')}} ">DashBoard Amministratore</a></li>
+                <li><a class="nav-link ps-5" href="{{route('admin.dashboard')}} ">DashBoard Amministratore</a></li>
                 @endif
                 @if(Auth::user()->is_revisor)
                 <li><a class="nav-link" href="{{route('revisor.dashboard')}} ">DashBoard Revisore</a></li>
@@ -44,8 +44,10 @@
                 @if(Auth::user()->is_writer)
                 <li><a class="nav-link" href="{{route('writer.dashboard')}} ">DashBoard Redattore</a></li>
                 @endif
-                <li class="nav-item">
+                <li class="nav-item position-relative start-25">
+                  <button class="btn btn-outline-warning ">
                  <a class="nav-link px-5" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti account</a>
+                </button>
                    <form id="form-logout" action="{{route('logout')}}" method="POST" class="d-none">@csrf</form>
                 </li>   
               @else
@@ -61,11 +63,13 @@
               
            @endauth
         </div>
-
+<div>
           <form class="px-5 mx-5 d-flex justify-content-end" role="search" action="{{route('article.search')}}" method="GET">
             <input class="form-control me-2" type="search" name="query" placeholder="Cerca" aria-label="Search">
             <button class="btn btn-outline-success" type="submit" title="Cerca fra gli articoli pubblicati...">Cerca</button>
           </form>
+
+          </div>
     </div>
     
   </nav>

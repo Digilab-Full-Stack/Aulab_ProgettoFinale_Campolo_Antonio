@@ -13,18 +13,105 @@
 
 </div>
 @endif
+<div class="container pt-2">
+  <div class="row">
+    <div class="col-12 fontCorsive text-center display-7">
+      <h3 class="">"E noi, compresi e amabili o offesi e succubi di demoni e lupi,</h3>
+      <h3>noi forti e abili o spenti all'angolo.</h3>
+      <h3>Noi cerchiamo la bellezza ovunque"</h3>
+      <h4>Marlene Kuntz</h4>
+    </div>
+  </div>
+</div>
+<div class="container-fluid pt-5">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <img class="w-50" src="/storage/images/barrasopra.png" alt="">
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col-1 py-5 d-flex justify-content-center row-reverse align-items-center ">
+        <img class="layCustom" src="/storage/images/partesx.png" alt="">
+      </div>
+        <div class="col-10 d-flex justify-content-center py-5">
 
-<div class="container-fluid p5 bg-secondary-subtle text-center">
+            <div id="carouselExampleCaptions" class="carousel slide carouselCustom">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/storage/images/home1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fontCorsive fs-3" >Se non esistessero i camaleonti, riuscireste a immaginarli?</h5>
+                      <p>Qui leggerai di camaleonti e altre storie... </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/storage/images/home2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>No non è Marte, però ci somiglia!</h5>
+                      <p>Qui leggerai di vulcanologi e altre storie... </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/storage/images/home3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Pantarei, tutto scorre.</h5>
+                      <p>Qui leggerai del fiume Okavango e altre storie...</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="">Indietro</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="">Avanti</span>
+                </button>
+              </div>
+        </div>
+        <div class="col-1 py-5 d-flex justify-content-center row-reverse align-items-center ">
+          <img class="layCustom" src="/storage/images/partedx.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="container-fluid pb-0">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <img class="w-50" src="/storage/images/barrasotto.png" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- <div class="container-fluid p5 bg-secondary-subtle text-center">
     <div class="row justify-content-center">
         <div class="col-12">
             <h1 class="display-1 fontCorsive">Fesso chi non legge</h1>
         </div>
 
     </div>
-</div>
+</div> --}}
 
 
-< <div class="container my-5">
+{{-- < <div class="container my-5">
     <div class="row justify-content-evenly">
         @foreach ($articles as $article)
         <div class="col-12 col-md-3">
@@ -65,6 +152,6 @@
             @endforeach
        
     </div>
-</div>
+</div> --}}
 
 </x-layout>
