@@ -3,7 +3,7 @@
     <div class="container-fluid p-5 bg-secondary-subtle text-center">
         <div class="row justify-content-center">
             <div class="col-12">
-                <h1 class="display-1">Tutti gli articoli trovati con"{{$query}}"</h1>
+                <h1 class="display-1 fontCorsive">Tutti gli articoli trovati con "{{$query}}"</h1>
             </div>
         </div>
     </div>

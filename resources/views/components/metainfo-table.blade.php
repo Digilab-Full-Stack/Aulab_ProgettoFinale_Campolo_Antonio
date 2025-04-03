@@ -30,7 +30,7 @@
             <form action="{{route('admin.deleteTag', ['tag'=> $metaInfo])}} " method="POST">
                 @csrf
                 @method('DELETE')   
-                <button type="submit" class="btn btn-secondary">Elimina</button>
+                <button type="submit" class="btn btn-outline-danger btn-dark fw-bold">Elimina</button>
             </form>
         </td>
      @else
@@ -49,7 +49,7 @@
       <form action="{{route('admin.deleteCategory', ['category'=>$metaInfo])}} " method="POST" >
           @csrf
           @method('DELETE')   
-          <button type="submit" class="btn btn-secondary">Elimina</button>
+          <button type="submit" class="btn btn-outline-danger btn-dark fw-bold">Elimina</button>
       </form>
   </td>
      

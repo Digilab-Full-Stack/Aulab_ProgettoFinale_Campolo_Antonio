@@ -1,5 +1,5 @@
-<footer class="pt-5">
-    <div class="container-fluid border-top py-2">
+<footer class="mt-3">
+    <div class="container-fluid border-top m-0">
         <div class="row justify-content-center align-items-center">
             <div class="col-12  col-md-3 col-lg-2 text-center">
                 <h3>The Aulab Post®</h3>
@@ -14,11 +14,11 @@
             <div class="col-12 col-md-2 col-lg-2 py-2 text-center">
                 <h3>Help & Info</h3>
                 <ul class="menu-list list-unstyled">
-                    <li class="menu-item"><a class="a-custom" href="">Su di noi</a></li>
-                    <li class="menu-item"><a class="a-custom" href="">La redazione</a></li>
-                    <li class="menu-item"><a class="a-custom" href="">Merchandising</a></li>
-                    <li class="menu-item"><a class="a-custom" href="">Diritti d'Autore e normative</a></li>
-                    <li class="menu-item"><a class="a-custom" href="">FAQS</a></li>
+                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">Su di noi</a></li>
+                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">La redazione</a></li>
+                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">Merchandising</a></li>
+                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">Diritti d'Autore e normative</a></li>
+                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">FAQS</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-4 col-lg-4 py-2 text-center">

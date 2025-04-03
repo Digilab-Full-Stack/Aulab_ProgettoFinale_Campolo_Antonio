@@ -1,9 +1,10 @@
 <x-layout>
 
-    <div class="container-fluid p-5 bg-secondary-subtle tect-center">
+    <div class="container-fluid p-5 text-center">
         <div class="row justify-content-center">
             <div class="col-12">
-                <h1 class="dislay-1">Modifica un articolo</h1>
+                <h1 class="display-1 fontCorsive">Modifica l'articolo</h1>
+                <h2 class="display-3 fontCorsive">"{{$article->title}}" </h2>
             </div>
         </div>
     </div>

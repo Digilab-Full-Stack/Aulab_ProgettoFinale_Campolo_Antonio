@@ -13,12 +13,11 @@
 
 </div>
 @endif
+
 <div class="container pt-5">
   <div class="row">
-    <div class="col-12 fontCorsive text-center display-7">
-      <h3 class="">"E noi, compresi e amabili o offesi e succubi di demoni e lupi,</h3>
-      <h3>noi forti e abili o spenti all'angolo.</h3>
-      <h3>Noi cerchiamo la bellezza ovunque"</h3>
+    <div class="col-12 fontCorsive text-center ">
+      <h3 class="fs-1 fw-bold">"E noi, compresi e amabili o offesi e succubi di demoni e lupi,<br>noi forti e abili o spenti all'angolo. <br>Noi cerchiamo la bellezza ovunque"</h3>
       <h4>Marlene Kuntz</h4>
     </div>
   </div>
@@ -31,21 +30,21 @@
   </div>
 </div>
 <div class="container">
-    <div class="row">
-      <div class="col-1 py-5 d-flex justify-content-center row-reverse align-items-center ">
+    <div class="row justify-content-center">
+      <div class="col-1 d-flex justify-content-center row-reverse align-items-center ">
         <img class="layCustom" src="/storage/images/partesx.png" alt="">
       </div>
-        <div class="col-10 d-flex justify-content-center py-5">
+        <div class="col-10 d-flex justify-content-center mt-5">
 
             <div id="carouselExampleCaptions" class="carousel slide carouselCustom">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators d-none">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/storage/images/home1.png" class="d-block img-fluid" alt="...">
+                <div class="carousel-inner rounded">
+                  <div class="carousel-item active rounded">
+                    <img src="/storage/images/home1.png" class="d-block img-fluid rounded-5" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="fontCorsive fs-3" >Se non esistessero i camaleonti, riuscireste a immaginarli?</h5>
                       <p>Qui leggerai di camaleonti e altre storie... </p>
@@ -76,7 +75,7 @@
                 </button>
               </div>
         </div>
-        <div class="col-1 py-5 d-flex justify-content-center row-reverse align-items-center ">
+        <div class="col-1 d-flex justify-content-center row-reverse align-items-center ">
           <img class="layCustom" src="/storage/images/partedx.png" alt="">
         </div>
     </div>
@@ -84,7 +83,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-12 d-flex justify-content-center">
-      <img class="w-50" src="/storage/images/barrasotto.png" alt="">
+      <img class="w-50 my-5" src="/storage/images/barrasotto.png" alt="">
     </div>
   </div>
 </div>

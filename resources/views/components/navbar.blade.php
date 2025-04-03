@@ -2,12 +2,12 @@
 
 <div class="container-fluid">
   <div class="row ">
-    <div class="col-10">
+    <div class="col-12 col-md-10">
                 <div class="navbar-brand d-flex justify-content-center">
                   <img src="/storage/images/logotap.png" href="{{route('homepage')}}" alt="il logo di The Aulab Post">
                 </div>
       </div>            
-    <div class="col-2 d-flex align-items-center ">
+    <div class="col-12 col-md-2 d-flex justify-content-center align-items-center ">
           <form class="d-flex justify-content-center" role="search" action="{{route('article.search')}}" method="GET">
             <input class="form-control me-auto" type="search" name="query" placeholder="Cerca" aria-label="Search">
             <button class="btn btn-outline-success " type="submit" title="Cerca fra gli articoli pubblicati...">Cerca</button>
@@ -29,8 +29,15 @@
             <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{route('homepage')}}">Home</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://internopoesia.com/" target="blank">Interno Poesia</a></li>
+                <li><a class="dropdown-item" href="https://vernacoliere.com/" target="blank">Il vernacoliere</a></li>
+                <li><a class="dropdown-item" href="https://radioblackout.org/" target="blank">Radio BlackOut</a></li>
+              </ul>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
@@ -59,7 +66,7 @@
                 @endif
                 <li class="nav-item disconnect">
                   {{-- <button class="btn btn-outline-danger "> --}}
-                 <a class="nav-link text-danger fw-bold" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti</a>
+                 <a class="nav-link text-danger btCustom fw-bold" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti</a>
                 {{-- </button> --}}
                    <form id="form-logout" action="{{route('logout')}}" method="POST" class="d-none">@csrf</form>
                 </li>   

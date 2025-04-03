@@ -59,7 +59,7 @@
             </div>
             <div class="col-12 col-md-6 p-5">
                 
-                <img src="/storage/images/teamwork.jpg" alt="" class="teamworkImage justify-content-center">
+                <img src="/storage/images/teamwork.png" alt="" class="teamworkImage pb-3 text-center">
             
                 <h2>Collabora come amministratore</h2>
                 <p>Avrai i superpoteri!</p>

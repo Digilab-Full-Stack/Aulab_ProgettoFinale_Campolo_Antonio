@@ -11,19 +11,18 @@
         <div class="row justify-content-center">
             <div class="col-12">
                 <h1 class="display-1 fontCorsive">Tutti gli articoli</h1>
-            </div>
-    
+            </div>    
         </div>
     </div>
     
-    
-    <div class="container my-5">
+
+    <div class="container py-5">
         <div class="row justify-content-evenly">
             @foreach ($articles as $article)
             <div class="col-12 col-md-4">
              
     
-                <div class="card cardCustom">
+                <div class="card cardCustom mb-5">
                     <img src="{{Storage::url($article->image)}}" class="card-img-top img-fluid imageCustom" alt="Immagine {{$article->title}}">
                         <div class="card-body">
                             <h5 class="card-title">{{$article->title}} </h5>
@@ -64,6 +63,6 @@
     </div>
 
        
-    
+
     
 </x-layout>

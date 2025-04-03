@@ -10,8 +10,8 @@
         <div class="row justify-content-center">
             <div class="col-12">
                 
-                <h1 class="display-1">Tutti gli articoli di </h1>
-                <h2>"{{$user->name}}"</h2>
+                <h1 class="display-1 fontCorsive">Tutti gli articoli di </h1>
+                <h2 class="display-3 fontCorsive">"{{$user->name}}"</h2>
            
             </div>
     
@@ -30,7 +30,7 @@
                             <h5 class="card-title">{{$article->title}} </h5>
                             <p class="card-subtitle">{{$article->subtitle}} </p>
                             @if ($article->category)
-                            <p class="fs-5">
+                            <p class="fs-7">
                                 Categoria:
                                 <a href="{{route('article.byCategory', $article->category)}}" class="text-capitalize fw-bold text-muted">{{$article->category->name}} </a>
                             </p>

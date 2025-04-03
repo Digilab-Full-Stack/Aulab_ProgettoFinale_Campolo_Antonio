@@ -1,28 +1,28 @@
 <x-layout>
 
-<div class="container-fluid bg-secondary-subtle text-center">
+<div class="container-fluid text-center">
     <div class="row justify-content-center">
         <div class="col-12">
-            <h1 class="display-1 fontCorsive">{{$article->title}} </h1>
+            <h1 class="display-1 fontCorsive">"{{$article->title}}"</h1>
         </div>
     </div>
 </div>
 
-<div class="container-fluid p-5">
+<div class="container-fluid mt-5">
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center">
             <img src="{{Storage::url($article->image)}}" class="img-fluid imageCustom mb-5" alt="Immagine {{$article->title}} ">
             <div class="text-center">
                 <h2>{{$article->subtitle}} </h2>
                 @if ($article->category)
-                <p class="fs-5">
+                <p class="fs-7">
                     Categoria:
-                    <a href="{{route('article.byCategory', $article->category)}}" class="text-capitalize fw-bold text-muted">{{$article->category->name}} </a>
+                    <a href="{{route('article.byCategory', $article->category)}}" class="text-capitalize fw-bold text-dark">{{$article->category->name}} </a>
                 </p>
                 @else
-                <p class="fs-5">Nessuna categoria</p>
+                <p class="fs-7">Nessuna categoria</p>
                 @endif
-                <div class="text-muted my-3">
+                <div class="my-3">
                     <p>Redatto il {{$article->created_at->format('d/m/Y')}} da {{$article->user->name}} </p>
 
                 </div>
@@ -47,7 +47,7 @@
                 </div>
             </div>
             @endif
-            <div class="text-center mt-5">
+            <div class="text-center my-5">
             <a href="{{route('article.index')}}" class="text-secondary">Vai alla lista degli articoli</a>
             </div>
 

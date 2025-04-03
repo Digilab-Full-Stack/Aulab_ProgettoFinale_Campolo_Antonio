@@ -12,12 +12,13 @@
     <title>The Aulab Post</title>
    
 </head>
-<body>
+<body class="bground0">
     <x-navbar></x-navbar>
 
 <div class="min-vh-lg-100">
  {{ $slot}}
 </div>
+
 <x-footer></x-footer>
 </body>
 </html>
