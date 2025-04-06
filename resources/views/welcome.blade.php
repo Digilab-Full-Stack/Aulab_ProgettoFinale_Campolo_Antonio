@@ -36,29 +36,29 @@
       </div>
         <div class="col-10 d-flex justify-content-center mt-5">
 
-            <div id="carouselExampleCaptions" class="carousel slide carouselCustom">
+            <div id="carouselExampleCaptions" class="carousel slide carouselCustom border border-dark border-5 border-shadows">
                 <div class="carousel-indicators d-none">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner rounded">
-                  <div class="carousel-item active rounded">
-                    <img src="/storage/images/home1.png" class="d-block img-fluid rounded-5" alt="...">
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <img src="/storage/images/home1.png" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5 class="fontCorsive fs-3" >Se non esistessero i camaleonti, riuscireste a immaginarli?</h5>
+                      <h5>Se non esistessero i camaleonti, riuscireste a immaginarli?</h5>
                       <p>Qui leggerai di camaleonti e altre storie... </p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="/storage/images/home2.png" class="d-block w-100" alt="...">
+                    <img src="/storage/images/home2.png" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>No non è Marte, però ci somiglia!</h5>
                       <p>Qui leggerai di vulcanologi e altre storie... </p>
                     </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="/storage/images/home3.png" class="d-block w-100" alt="...">
+                  <div class="carousel-item active">
+                    <img src="/storage/images/home3.png" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Pantarei, tutto scorre.</h5>
                       <p>Qui leggerai del fiume Okavango e altre storie...</p>

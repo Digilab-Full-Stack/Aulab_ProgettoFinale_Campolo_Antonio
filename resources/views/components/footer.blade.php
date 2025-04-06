@@ -1,4 +1,40 @@
-<footer class="mt-3">
+<footer class="mt-3 bg-secondary-subtle position-end">
+    <div class="modal fade" id="termini" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Termini del servizio </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="faqs" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">FAQS</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div class="container-fluid border-top m-0">
         <div class="row justify-content-center align-items-center">
             <div class="col-12  col-md-3 col-lg-2 text-center">
@@ -14,11 +50,11 @@
             <div class="col-12 col-md-2 col-lg-2 py-2 text-center">
                 <h3>Help & Info</h3>
                 <ul class="menu-list list-unstyled">
-                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">Su di noi</a></li>
-                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">La redazione</a></li>
-                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">Merchandising</a></li>
-                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">Diritti d'Autore e normative</a></li>
-                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">FAQS</a></li>
+                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="{{route('aboutus')}}" >Su di noi</a></li>
+                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="{{route('editorial_team')}}">La redazione</a></li>
+                    {{-- <li class="menu-item"><a class="a-custom text-dark fw-bold" href="">Merchandising</a></li> --}}
+                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="" data-bs-toggle="modal" data-bs-target="#termini">Termini del servizio</a></li>
+                    <li class="menu-item"><a class="a-custom text-dark fw-bold" href="{{route('faqs')}}">FAQS</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-4 col-lg-4 py-2 text-center">

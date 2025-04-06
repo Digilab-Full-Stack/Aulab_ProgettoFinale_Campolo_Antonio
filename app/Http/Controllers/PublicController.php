@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\CareerRequestMail;
 use App\Models\Article;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controllers\HasMiddleware;
 use Illuminate\Routing\Controllers\Middleware;
@@ -15,13 +16,23 @@ class PublicController extends Controller implements HasMiddleware
     public static function middleware()
     {
         return [
-            new Middleware('auth', except: ['homepage', 'login', 'register'])
+            new Middleware('auth', except: ['homepage', 'login', 'register', 'faqs', 'aboutus', 'editorial_team'])
         ];
     }
 
     public function homepage () {
         $articles = Article::where('is_accepted', true)->orderBy('created_at', 'desc')->take(4)->get();
         return view('welcome', compact('articles'));
+    }
+    public function faqs () {
+        return view('faqs');
+    }
+    public function editorial_team () {
+        $users=User::all();
+        return view('editorial_team', compact('users'));
+    }
+    public function aboutus () {
+        return view('aboutus');
     }
     public function login () {
         return view('auth.login');

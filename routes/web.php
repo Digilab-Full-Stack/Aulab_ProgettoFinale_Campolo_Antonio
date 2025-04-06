@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage'); 
 Route::get('/login', [PublicController::class, 'login'])->name('login');
 Route::get('/register', [PublicController::class, 'register'])->name('register');
+Route::get('/faqs', [PublicController::class, 'faqs'])->name('faqs');
+Route::get('/aboutus', [PublicController::class, 'aboutus'])->name('aboutus');
+Route::get('/editorial_team', [PublicController::class, 'editorial_team'])->name('editorial_team');
 
 Route::get('/article/index', [ArticleController::class, 'index'])->name('article.index');
 Route::get('/article/show/{article}', [ArticleController::class, 'show'])->name('article.show');

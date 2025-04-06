@@ -10,8 +10,8 @@
         <div class="row justify-content-center">
             <div class="col-12">
                 
-                <h1 class="display-1 fontCorsive">Tutti gli articoli di </h1>
-                <h2 class="display-3 fontCorsive">"{{$user->name}}"</h2>
+                <h1 class="display-1 fontCorsive">Tutti gli articoli di "{{$user->name}}"</h1>
+                {{-- <h2 class="display-3 fontCorsive"></h2> --}}
            
             </div>
     
@@ -21,7 +21,7 @@
     <div class="container my-5">
         <div class="row justify-content-evenly">
             @foreach ($articles as $article)
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 d-flex justify-content-center pb-3">
     
     
                 <div class="card" style="width: 18rem;">
