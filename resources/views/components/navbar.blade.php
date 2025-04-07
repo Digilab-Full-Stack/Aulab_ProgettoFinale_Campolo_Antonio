@@ -49,20 +49,31 @@
 
 
             @auth
-                <li class="nav-item">
-                  <a class="nav-link" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="{{route('careers')}}">Collabora</a>
-                </li>
+                
+                
                 @if(Auth::user()->is_admin)
+                {{-- <li class="nav-item">
+                  <a class="nav-link" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
+                </li> --}}
                 <li class="nav-item"><a class="nav-link" href="{{route('admin.dashboard')}} ">DashBoard Amministratore</a></li>
                 @endif
                 @if(Auth::user()->is_revisor)
+                <li class="nav-item">
+                  <a class="nav-link" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="{{route('revisor.dashboard')}} ">DashBoard Revisore</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="{{route('careers')}}">Collabora</a>
+                </li>
                 @endif
                 @if(Auth::user()->is_writer)
+                <li class="nav-item">
+                  <a class="nav-link" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="{{route('writer.dashboard')}} ">DashBoard Redattore</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="{{route('careers')}}">Collabora</a>
+                </li>
                 @endif
                 <li class="nav-item disconnect">
                   {{-- <button class="btn btn-outline-danger "> --}}
