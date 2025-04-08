@@ -59,15 +59,15 @@
             </div>
             <div class="col-12 col-md-6 p-5">
                 
-                <img src="/storage/images/teamwork.png" alt="" class="teamworkImage pb-3 text-center">
-            
-                <h2>Collabora come amministratore</h2>
+                <img src="/storage/images/teamwork.png" alt="" class="teamworkImage pb-3 text-center d-flex justify-content-center">
+            <div class=" border bg-secondary border-warning border-5 border-opacity-25 rounded-5 text-center ">
+                <h3 class="mt-2">Collabora come amministratore</h3>
                 <p>Avrai i superpoteri!</p>
-                <h2>Collabora come revisore</h2>
+                <h3>Collabora come revisore</h3>
                 <p>Revisiona gli articoli redatti e ne decide la pubblicazione</p>
-                <h2>Collabora come redattore</h2>
-                <p>Unisciti alla nostra redazione, potrai pubblicare anche tu i tuoi articoli</p>
-
+                <h3>Collabora come redattore</h3>
+                <p>Unisciti alla nostra redazione, <br>potrai pubblicare anche tu i tuoi articoli</p>
+            </div>
 
             </div>
 

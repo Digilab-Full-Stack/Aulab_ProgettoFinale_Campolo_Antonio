@@ -1,6 +1,6 @@
 <x-layout>
 
-<div class="container-fluid text-center">
+<div class="container-fluid text-center mt-3">
     <div class="row justify-content-center">
         <div class="col-12">
             <h1 class="display-1 fontCorsive">"{{$article->title}}"</h1>
@@ -8,11 +8,12 @@
     </div>
 </div>
 
-<div class="container-fluid mt-5">
+<div class="container-fluid  mt-5">
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center">
             <img src="{{Storage::url($article->image)}}" class="img-fluid imageCustom mb-5" alt="Immagine {{$article->title}} ">
-            <div class="text-center">
+            <div class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center bg-secondary mb-5 border border-warning  border-5 border-opacity-25 rounded-5">
+            <div class="text-center my-3 mx-3 ">
                 <h2>{{$article->subtitle}} </h2>
                 @if ($article->category)
                 <p class="fs-7">
@@ -28,7 +29,7 @@
                 </div>
             </div>
             <hr>
-            <p>{{$article->body}} </p>
+            <p class="mx-5 ">{{$article->body}} </p>
             @if ( Auth::user() && Auth::user()->is_revisor)
             <div class="container mt-5">
                 <div class="row">
