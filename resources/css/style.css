@@ -9,10 +9,16 @@
 }
 
 .imageCustom {
-    height: 350px;
-   
-   
+    height: 350px;  
 }
+
+
+.iconc:hover {
+  background-color: orange;
+  border-radius: 20px;
+}
+
+
 
 .cardCustom {
     height: 600px;
@@ -173,3 +179,4 @@ background-size: cover;
     color: white;
     transform: rotateY(180deg);
   }
+

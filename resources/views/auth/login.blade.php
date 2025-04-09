@@ -35,7 +35,7 @@
                   <input type="password" name="password" class="form-control" id="inputPassword" value="{{old('inputPassword')}}">
                 </div>
              
-                <button type="submit" class="btn btn-primary">Invia</button>
+                <button type="submit" class="btn btn-primary btn-outline-tertiary border-dark">Invia</button>
               </form>
 
 

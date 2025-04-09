@@ -42,7 +42,7 @@
                                 <p>Redatto il {{$article->created_at->format('d/m/Y')}} <br>
                                 da <a href="{{route('article.byUser', $article->user)}}" class="text-capitalize text-muted"> {{$article->user->name}}</a>    
                                 </p>
-                                <a href="{{route('article.show', $article)}}, $article" class="btn btn-outline-secondary btnCustom px-1 mx-1 ">Leggi</a>
+                                <a href="{{route('article.show', $article)}}, $article" class="btn btn-secondary btn-outline-warning btnCustom px-1 mx-1 ">Leggi</a>
                             </div>
 
                             <div class="my-1 d-flex">

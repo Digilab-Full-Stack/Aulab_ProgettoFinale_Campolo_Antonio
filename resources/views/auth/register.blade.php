@@ -8,7 +8,7 @@
             @endforeach
         </ul>
     </div>
-@endif
+    @endif
 
 {{-- 
 <div class="container">
@@ -23,7 +23,7 @@
     <div class="row justify-content-center">
         <div class="col-8 col-md-5 text-center">     
           <h3 class="mt-5">Inserisci i tuoi dati per registrarti</h3>
-            <form action="{{route('register')}}" method="POST">
+            <form action="{{route('register')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="mt-5 mb-3 text-danger fw-bold fs-5">
                     <label for="inputName" class="form-label">Nome</label>

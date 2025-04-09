@@ -9,8 +9,8 @@
       </div>            
     <div class="col-12 col-md-2 d-flex justify-content-center align-items-center ">
           <form class="d-flex justify-content-center" role="search" action="{{route('article.search')}}" method="GET">
-            <input class="form-control me-auto" type="search" name="query" placeholder="Cerca" aria-label="Search">
-            <button class="btn btn-outline-success " type="submit" title="Cerca fra gli articoli pubblicati...">Cerca</button>
+            <input class="form-control me-auto " type="search" name="query" placeholder="Cerca" aria-label="Search">
+            <button class="btn btn-success btn-outline-warning border-dark mx-3 " type="submit" title="Cerca fra gli articoli pubblicati...">Cerca</button>
           </form>
         
     </div>
@@ -58,23 +58,20 @@
                 <li class="nav-item"><a class="nav-link" href="{{route('admin.dashboard')}} ">DashBoard Amministratore</a></li>
                 @endif
                 @if(Auth::user()->is_revisor)
-                <li class="nav-item">
-                  <a class="nav-link" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
-                </li>
+             
                 <li class="nav-item"><a class="nav-link" href="{{route('revisor.dashboard')}} ">DashBoard Revisore</a></li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="{{route('careers')}}">Collabora</a>
-                </li>
+           
                 @endif
                 @if(Auth::user()->is_writer)
                 <li class="nav-item">
                   <a class="nav-link" href="{{route('article.create')}}" aria-disabled="true">Inserisci un articolo</a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="{{route('writer.dashboard')}} ">DashBoard Redattore</a></li>
+             
+                @endif
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="{{route('careers')}}">Collabora</a>
                 </li>
-                @endif
                 <li class="nav-item disconnect">
                   {{-- <button class="btn btn-outline-danger "> --}}
                  <a class="nav-link text-danger btCustom fw-bold" href="" onclick="event.preventDefault(); document.querySelector('#form-logout').submit()">Disconnetti</a>

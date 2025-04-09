@@ -27,7 +27,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 text-danger">
+            <div class="col-12 text-danger ">
                 <h2>Articoli da revisionare</h2>
                 <x-writer-articles-table  :articles="$unrevisionedArticles"></x-writer-articles-table>
             </div>
